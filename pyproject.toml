@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mynumpkg"
+version = "0.1.0"
+description = "Simple NumPy-based array operations and statistics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  {name = "ada-jl3326", email = "jl3326@ic.ac.uk"}
+]
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest", "flake8"]
